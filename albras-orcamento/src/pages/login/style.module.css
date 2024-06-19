@@ -15,18 +15,80 @@
   /* border: 5px solid rgb(255, 0, 0); */
 }
 
-.container form {
+.container .imageLogin img {
+  width: 30rem;
+  height: 6rem;
+}
+
+.container .formLogin {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   padding: 1rem;
-  gap: 10px;
+  gap: 3rem;
   /* border: 5px solid red; */
 }
 
-.container .imageLogin img {
-  width: 30rem;
-  height: 10rem;
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 16px; /* Ajuste o espaçamento entre os grupos de entrada conforme necessário */
 }
 
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Ajuste o espaçamento entre os elementos de entrada conforme necessário */
+  
+}
+
+.inputWrapper label {
+  min-width: 80px; /* Ajuste a largura mínima do label conforme necessário */
+}
+
+.inputWrapper input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid #ffffff; /* Estilo da linha inferior */
+  outline: none;
+  color: rgb(255, 120, 10);
+}
+
+.rememberAndPassword {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.formLogin a {
+  text-decoration: none;
+  color: var(--gray-100);
+  font-weight: 400;
+}
+
+.formLogin a:hover {
+  color: rgb(255, 120, 10);
+}
+
+.accessLogin {
+  background-color: white;
+  color: var(--gray-700);
+  font-weight: 400;
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.accessLogin:hover {
+  background-color: rgb(255, 120, 10);
+}
+
+.formLogin .accessHelpMargin {
+  margin: 4rem 0rem 0rem 0rem;
+}

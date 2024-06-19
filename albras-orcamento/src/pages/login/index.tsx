@@ -9,32 +9,30 @@ export default function Index() {
         <div className={styles.imageLogin}>
           <img src={albrasORM} alt="logo orçamento albras"></img>
         </div>
-        <form>
-          <div>
-            <div>
+        <form className={styles.formLogin}>
+          <div className={styles.inputGroup}>
+            <div className={styles.inputWrapper}>
               <label>Usuário:</label>
               <input type="text" />
               <User size={32} />
             </div>
-            <div>
+            <div className={styles.inputWrapper}>
               <label>Senha:</label>
               <input type="text" />
               <Password size={32} />
             </div>
           </div>
-          <div>
+          <div className={styles.rememberAndPassword}>
             <div>
               <input type="checkbox" />
               <label>Lembrar de mim.</label>
             </div>
             <div>
-              <label>Esqueci minha senha.</label>
+              <a href="#">Esqueci minha senha.</a>
             </div>
           </div>
-          <div>
-            <button>Acessar</button>
-          </div>
-          <div>
+          <button className={styles.accessLogin}>Acessar</button>
+          <div className={styles.accessHelpMargin}>
             <a href="#">
               Problemas com{" "}
               <span>
