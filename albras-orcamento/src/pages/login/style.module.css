@@ -33,45 +33,69 @@
 .inputGroup {
   display: flex;
   flex-direction: column;
-  gap: 16px; /* Ajuste o espaçamento entre os grupos de entrada conforme necessário */
+  gap: 35px;
+  width: 100%;
 }
 
 .inputWrapper {
   display: flex;
   align-items: center;
-  gap: 8px; /* Ajuste o espaçamento entre os elementos de entrada conforme necessário */
-  
+  gap: 8px;
 }
 
 .inputWrapper label {
-  min-width: 80px; /* Ajuste a largura mínima do label conforme necessário */
+  display: flex;
+  font-size: 16px;
+  min-width: 80px;
+  position: absolute;
+  justify-content: left;
+  margin: 0px 0px 0px 10px;
+  pointer-events: none;
+  transition: all 0.3s ease;
 }
 
 .inputWrapper input {
   flex: 1;
   padding: 8px;
   border: none;
-  background: transparent;
-  border-bottom: 2px solid #ffffff; /* Estilo da linha inferior */
   outline: none;
+  background: transparent;
+  border-bottom: 1px solid #ffffff;
+  outline: none;
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease;
+}
+
+.inputGroup input:focus ~ label,
+.inputGroup input:valid ~ label {
+  font-size: 14px;
   color: rgb(255, 120, 10);
+  transform: translateY(-130%);
+}
+
+.inputWrapper .svgGroup {
+  position: relative;
+  transform: translateY(-10%);
+  pointer-events: none;
+  transition: all 0.3s ease;
 }
 
 .inputWrapper input:hover {
-  border-bottom: 2px solid rgb(255, 120, 10); /* Estilo da linha inferior */
+  border-bottom: 2px solid rgb(255, 120, 10);
+  transition: all 0.3s ease;
 }
 
 .rememberAndPassword {
   width: 100%;
   display: flex;
-  gap: 10px;
+  gap: 50px;
   justify-content: space-between;
   align-items: center;
 }
 
 .wrapperRememberMe {
   display: flex;
-  gap: 10px;
+  gap: 5px;
 }
 
 .rememberAndPassword input {
@@ -87,12 +111,12 @@
 }
 
 .rememberAndPassword input:checked {
-  background-color: rgb(255, 120, 10); 
+  background-color: rgb(255, 120, 10);
   border: none;
 }
 
 .rememberAndPassword input:checked::before {
-  content: '';
+  content: "";
   display: block;
   width: 6px;
   height: 10px;
@@ -116,7 +140,7 @@
   background-color: white;
   color: var(--gray-700);
   font-weight: 400;
-  width: 70%;
+  width: 80%;
   padding: 10px;
   border: none;
   border-radius: 5px;
@@ -125,6 +149,7 @@
 
 .accessLogin:hover {
   background-color: rgb(255, 120, 10);
+  transition: all 0.5s ease;
 }
 
 .formLogin .accessHelpMargin {
