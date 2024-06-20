@@ -23,7 +23,7 @@ export default function Index() {
             </div>
           </div>
           <div className={styles.rememberAndPassword}>
-            <div>
+            <div className={styles.wrapperRememberMe}>
               <input type="checkbox" />
               <label>Lembrar de mim.</label>
             </div>

@@ -57,11 +57,49 @@
   color: rgb(255, 120, 10);
 }
 
+.inputWrapper input:hover {
+  border-bottom: 2px solid rgb(255, 120, 10); /* Estilo da linha inferior */
+}
+
 .rememberAndPassword {
   width: 100%;
   display: flex;
+  gap: 10px;
   justify-content: space-between;
   align-items: center;
+}
+
+.wrapperRememberMe {
+  display: flex;
+  gap: 10px;
+}
+
+.rememberAndPassword input {
+  appearance: none;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 2px;
+  background-color: var(--gray-100);
+  border: 1px solid var(--gray-100);
+  position: relative;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.rememberAndPassword input:checked {
+  background-color: rgb(255, 120, 10); 
+  border: none;
+}
+
+.rememberAndPassword input:checked::before {
+  content: '';
+  display: block;
+  width: 6px;
+  height: 10px;
+  margin: auto;
+  border: solid var(--gray-200);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
 }
 
 .formLogin a {
