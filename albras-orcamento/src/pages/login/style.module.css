@@ -149,9 +149,47 @@
 
 .accessLogin:hover {
   background-color: rgb(255, 120, 10);
-  transition: all 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .formLogin .accessHelpMargin {
   margin: 4rem 0rem 0rem 0rem;
+}
+
+/* Media query para dispositivos móveis */
+@media (max-width: 930px) {
+  .container {
+    flex-direction: column;
+    gap: 2rem; 
+    padding: 1rem; 
+  }
+
+  .container .imageLogin img {
+    width: 20rem; 
+    height: auto; 
+  }
+
+  .container .formLogin {
+    width: 100%; 
+    gap: 2rem;
+  }
+
+  .inputGroup {
+    gap: 20px;
+  }
+
+  .rememberAndPassword {
+    flex-direction: column; 
+    gap: 20px; 
+    align-items: flex-start; 
+  }
+
+  .wrapperRememberMe {
+    flex-direction: row; 
+    gap: 5px; 
+  }
+
+  .accessLogin {
+    width: 100%; 
+  }
 }

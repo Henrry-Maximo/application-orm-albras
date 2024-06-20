@@ -5,6 +5,7 @@ import styles from "./style.module.css";
 export default function Index() {
   return (
     <div className={styles.wrapper}>
+      <div className={styles.loadingLine}></div>
       <div className={styles.container}>
         <div className={styles.imageLogin}>
           <img src={albrasORM} alt="logo orçamento albras"></img>
@@ -12,13 +13,13 @@ export default function Index() {
         <form className={styles.formLogin}>
           <div className={styles.inputGroup}>
             <div className={styles.inputWrapper}>
-              <input type="text" required />
-              <label>Usuário:</label>
+              <input type="text" required maxLength={25}/>
+              <label>Usuário</label>
               <User className={styles.svgGroup} size={32} />
             </div>
             <div className={styles.inputWrapper}>
-              <input type="text" required />
-              <label>Senha:</label>
+              <input type="text" required maxLength={16} />
+              <label>Senha</label>
               <Password className={styles.svgGroup} size={32} />
             </div>
           </div>
