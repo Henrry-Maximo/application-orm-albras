@@ -12,11 +12,10 @@
   text-align: center;
   align-items: center;
   gap: 10rem;
-  /* border: 5px solid rgb(255, 0, 0); */
 }
 
 .container .imageLogin img {
-  width: 30rem;
+  width: 25rem;
   height: 6rem;
 }
 
@@ -27,7 +26,6 @@
   align-items: center;
   padding: 1rem;
   gap: 3rem;
-  /* border: 5px solid red; */
 }
 
 .inputGroup {
@@ -156,7 +154,7 @@
   margin: 4rem 0rem 0rem 0rem;
 }
 
-/* Media query para dispositivos móveis */
+/* dispositivos móveis */
 @media (max-width: 930px) {
   .container {
     flex-direction: column;
