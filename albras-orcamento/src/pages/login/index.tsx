@@ -5,7 +5,6 @@ import styles from "./style.module.css";
 export default function Index() {
   return (
     <div className={styles.wrapper}>
-      <div className={styles.loadingLine}></div>
       <div className={styles.container}>
         <div className={styles.imageLogin}>
           <img src={albrasORM} alt="logo orçamento albras"></img>
